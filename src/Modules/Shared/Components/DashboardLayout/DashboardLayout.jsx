@@ -18,6 +18,7 @@ export default function DashboardLayout({ setTheme }) {
   }, []);
   return (
     <>
+     
       <Box sx={{ display: "flex" }}>
         <Navbar setOpen={setOpen} open={open} setTheme={setTheme} />
         <Box

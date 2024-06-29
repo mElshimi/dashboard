@@ -8,6 +8,7 @@ import DashboardLayout from "./Modules/Shared/Components/DashboardLayout/Dashboa
 import Comp1 from "./Modules/Dashboard/Components/Comp1/Comp1";
 import Comp3 from "./Modules/Dashboard/Components/Comp3/Comp3";
 import Comp2 from "./Modules/Dashboard/Components/Comp2/Comp2";
+import Home from "./Modules/Dashboard/Components/Home/Home";
 
 function App() {
   // state for getting mode and checking mode status from local storage, if not found any status will be set to dark
@@ -65,6 +66,10 @@ function App() {
       errorElement: <NotFound />,
       element: <DashboardLayout setTheme={setTheme} />,
       children: [
+        {
+          index: true,
+          element: <Home />,
+        },
         {
           path: "comp1",
           element: <Comp1 />,

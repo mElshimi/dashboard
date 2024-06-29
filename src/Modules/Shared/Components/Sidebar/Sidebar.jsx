@@ -13,7 +13,7 @@ import {
 import MuiDrawer from "@mui/material/Drawer";
 import { useLocation, useNavigate } from "react-router-dom";
 
-//props from the dashboard layout for handle sidebar 
+//props from the dashboard layout for handle sidebar
 export default function Sidebar({ open }) {
   // instance form use navigate react-router-dom for use it to navigate to dashboard pages
   const navigate = useNavigate();
@@ -80,8 +80,13 @@ export default function Sidebar({ open }) {
 // sidebar list of objects contains the list title, icon, and component path name which will navigate to
 const sidebarList = [
   {
-    title: "comp1",
+    title: "Home",
     icon: <Home sx={{ color: "#fff" }} fontSize="large" />,
+    path: "/",
+  },
+  {
+    title: "comp1",
+    icon: <Villa sx={{ color: "#fff" }} fontSize="large" />,
     path: "/comp1",
   },
   {

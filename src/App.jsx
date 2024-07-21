@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { RouterProvider, createBrowserRouter,createHashRouter } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme, CssBaseline } from "@mui/material";
+import { useState } from "react";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import NotFound from "./Modules/Shared/Components/NotFound/NotFound";
-import DashboardLayout from "./Modules/Shared/Components/DashboardLayout/DashboardLayout";
 import Comp1 from "./Modules/Dashboard/Components/Comp1/Comp1";
-import Comp3 from "./Modules/Dashboard/Components/Comp3/Comp3";
 import Comp2 from "./Modules/Dashboard/Components/Comp2/Comp2";
+import Comp3 from "./Modules/Dashboard/Components/Comp3/Comp3";
 import Home from "./Modules/Dashboard/Components/Home/Home";
+import DashboardLayout from "./Modules/Shared/Components/DashboardLayout/DashboardLayout";
+import NotFound from "./Modules/Shared/Components/NotFound/NotFound";
 
 function App() {
   // state for getting mode and checking mode status from local storage, if not found any status will be set to dark

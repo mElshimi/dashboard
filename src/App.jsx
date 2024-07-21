@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter,createHashRouter } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme, CssBaseline } from "@mui/material";
 import "./App.css";
@@ -60,7 +60,7 @@ function App() {
           }),
     },
   });
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {
       path: "/",
       errorElement: <NotFound />,

@@ -21,7 +21,7 @@ export default function Sidebar({ open }) {
   const location = useLocation();
   // instance form use theme material ui
   const theme = useTheme();
-
+  console.log(location);
   return (
     <>
       <Drawer variant="permanent" open={open}>
